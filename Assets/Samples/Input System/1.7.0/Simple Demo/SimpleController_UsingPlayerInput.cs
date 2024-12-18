@@ -109,5 +109,6 @@ public class SimpleController_UsingPlayerInput : MonoBehaviour
         newProjectile.GetComponent<Rigidbody>().AddForce(transform.forward * 20f, ForceMode.Impulse);
         // newProjectile.GetComponent<MeshRenderer>().material.color =
         //     new Color(Random.value, Random.value, Random.value, 1.0f);
+        
     }
 }

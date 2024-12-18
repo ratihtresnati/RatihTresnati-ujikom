@@ -12,6 +12,12 @@ public class AnimalMove : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if(other.gameObject.CompareTag("Player"))
+        {
+            ScoreManager sm = FindObjectOfType<ScoreManager>();
+            sm.Decrease();
+        }
     }
 
     void Start()
