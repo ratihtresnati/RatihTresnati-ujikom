@@ -6,9 +6,6 @@ public class ScoreManager : MonoBehaviour
 {
     public int score = 0;
 
-    /// <summary>
-    /// Update is called every frame, if the MonoBehaviour is enabled.
-    /// </summary>
     void Update()
     {
         Debug.Log("score" + score);
