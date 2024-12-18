@@ -41,6 +41,12 @@ public class SpawningAnimal : MonoBehaviour
             GameOver = true;
             return;
         }
+
+        if(GameOver == true)
+        {
+            spawnAnimal = true;
+            startTime = 60;
+        }
     }
 
     public void Spawn()

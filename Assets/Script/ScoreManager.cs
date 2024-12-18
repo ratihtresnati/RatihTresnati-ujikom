@@ -14,6 +14,10 @@ public class ScoreManager : MonoBehaviour
     public void AddScore()
     {
         score = score + 1; 
+
+        PlayerPrefs.SetInt("score", score);
+
+        PlayerPrefs.Save();
         Debug.Log("add");
     }
 
